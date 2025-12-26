@@ -1,0 +1,241 @@
+\documentclass[a4paper,10pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+
+% Setup for Blue Links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=blsck,
+    urlcolor=black,
+}
+
+% Page formatting
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins - REDUCED SPACE
+\addtolength{\oddsidemargin}{-0.625in}
+\addtolength{\evensidemargin}{-0.625in}
+\addtolength{\textwidth}{1.25in}
+\addtolength{\topmargin}{-.625in}
+\addtolength{\textheight}{1.25in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting - REDUCED SPACING
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\footnotesize#3} & \textit{\footnotesize #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \footnotesize#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%----------------------------------------------------------------------------------------
+%	RESUME STARTS HERE
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+%----------HEADER----------
+\begin{center}
+    \textbf{\Huge \scshape Vishnu Vardhan} \\ \vspace{2pt}
+    \textbf{Python Full Stack Developer | AI/ML Application Engineer} \\ \vspace{3pt}
+    \footnotesize
+\faPhone\ 9182177915 \quad
+\faEnvelope\ \href{mailto:repanavishnuvardhan67664@gmail.com}{\underline{repanavishnuvardhan67664@gmail.com}} \quad
+\faLinkedin\ \href{https:/www.linkedin.com/in/repana-vishnu-vardhan-26795b316/}{\underline{linkedin.com/in/vishnu}} \quad 
+\faGithub\ \href{https://github.com/vishnu915}{\underline{github.com/vishnu915}} \quad
+\faGlobe\ \href{https://vishnu-personal-web.lovable.app/}{\underline{Portfolio Website}}
+\end{center}
+
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \footnotesize{\item{
+   \textbf{6+ months of internship experience} building scalable \textbf{full-stack web applications with AI/ML}, with a strong ability to \textbf{understand client requirements} and translate them into reliable end-to-end solutions using \textbf{HTML, CSS, JavaScript, Python, Flask, MySQL, and RESTful APIs,AI/ML}. Experienced in \textbf{debugging, optimizing, and maintaining} production-ready applications with a focus on clean and maintainable code.
+  }}
+\end{itemize}
+
+
+
+
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Aditya Degree College}{B. Kotha Kota}
+      {Bachelor of Computer Applications (BCA); CGPA: 9.05/10}{Expected May 2026}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {The Developers Arena}{Remote}
+      {Python Developer Intern}{Present}
+      \resumeItemListStart
+        \resumeItem{Working on real-world Python development projects with structured training and mentorship.}
+        \resumeItem{Developing backend modules, REST APIs, and database integrations using Flask and MySQL.}
+        \resumeItem{Writing clean, efficient, and maintainable Python code with debugging and testing.}
+        \resumeItem{Collaborating remotely with mentors to deliver scalable applications.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Infotact Solutions}{Remote}
+      {SDE Intern}{3 Months}
+      \resumeItemListStart
+        \resumeItem{Designed and developed full-stack web applications using React.js, Node.js, and APIs.}
+        \resumeItem{Participated in code reviews and optimized application performance.}
+        \resumeItem{Debugged and resolved issues to improve reliability and user experience.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Cognifyz Technologies}{Remote}
+      {Python Developer Intern}{1 Month}
+      \resumeItemListStart
+        \resumeItem{Developed basic Python programs and solved internship tasks using real-world logic.}
+        \resumeItem{Practiced OOP, functions, and file handling while writing clean and structured code.}
+        \resumeItem{Tested, debugged, and improved scripts to ensure error-free execution.}
+        \resumeItem{\href{https://drive.google.com/file/d/1bbRs9bmLf68-4EirkVB64PlNh5xc6e_N/view?usp=sharing}{\underline{View Certificate}}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {SkillCraft Technology}{Remote}
+      {Machine Learning Intern}{1 Month}
+      \resumeItemListStart
+        \resumeItem{Performed supervised (Regression, Classification) and unsupervised (Clustering) ML tasks.}
+        \resumeItem{Developed preprocessing pipelines using NumPy and Pandas.}
+        \resumeItem{Evaluated models using accuracy, precision, recall, and F1-score metrics.}
+        \resumeItem{Improved predictive performance through feature engineering and hyperparameter tuning.}
+        \resumeItem{\href{https://drive.google.com/file/d/1IvrOfzbXjWpW2ncbxQjXSS-FYnotCmzu/view?usp=drive_link}{\underline{View Certificate}}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Magic Bus Foundation}{College Program}
+      {Trainee (IBM-Supported)}{1 Week}
+      \resumeItemListStart
+        \resumeItem{Completed an intensive 1-week training program in collaboration with IBM.}
+        \resumeItem{Learned AI fundamentals, communication, and problem-solving skills.}
+        \resumeItem{\href{https://drive.google.com/file/d/1olsA-44AC9sah75pkXFbP-mjui2FXDAI/view?usp=drive_link}{\underline{View Certificate}}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \footnotesize{\item{
+    \textbf{Languages:} Python (Strong), Java (Beginner) \\
+     \textbf{Web Development}{: HTML, CSS, JavaScript, React.js, Node.js} \\
+     \textbf{Frameworks}{: Flask (Intermediate), Django (Beginner)} \\
+     \textbf{Databases}{: MySQL, SQL, MongoDB, Vector Databases (Pinecone, FAISS)} \\
+     \textbf{AI \& ML}{: Scikit-learn, TensorFlow, PyTorch, OpenCV, LLMs (OpenAI, Gemini), RAG} \\
+     \textbf{Tools}{: Git, GitHub, Postman, VS Code, Docker, Jira, MySQL Workbench} \\
+     \textbf{Soft Skills}{: Problem Solving, Communication, Team Collaboration, Adaptability}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+         {\textbf{Vehicle Speed Detection System} $|$ \emph{HTML, CSS, JavaScript, Python, Flask, MySQL, OpenCV, AI/ML}}{}
+          \resumeItemListStart
+            \resumeItem{Built a \textbf{Full-Stack ML/AI web application} to estimate vehicle speed from video data using \textbf{open CV} with \textbf{~95\% accuracy}.}
+             \resumeItem{Implemented \textbf{real-time object detection and tracking} using \textbf{OpenCV} to compute vehicle speed from uploaded footage.}
+            \resumeItem{Designed a \textbf{responsive user interface} for video upload and real-time speed visualization.}
+            \resumeItem{Integrated \textbf{Flask backend APIs} with a \textbf{MySQL database} to store \textbf{user and vehicle speed data}.}
+             \resumeItem{\faGithub\ 
+            \href{https://github.com/vishnu915/Vehicle-Speed-Detection-Using-Open-CV/tree/master}{\underline{GitHub Repository}}}
+
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+            {\textbf{Online Fee Management System} $|$ \emph{HTML, CSS, JavaScript, Python, Flask, MySQL, AI (LLMs, RAG)}}{}
+          \resumeItemListStart
+            \resumeItem{Understood \textbf{real-world college requirements} and built a \textbf{Full-Stack AI-powered web app} to automate fee management.}
+
+\resumeItem{Implemented \textbf{secure admin authentication}, student and fee record management, and automated receipt generation.}
+\resumeItem{Integrated \textbf{AI-powered features using LLMs and RAG} to enable intelligent fee queries, summaries, and admin assistance.}
+\resumeItem{Developed an \textbf{interactive admin dashboard} with analytics, charts, and AI-driven financial insights.}
+
+           \resumeItem{\faGithub\ \href{https://github.com/vishnu915/online-fee-management-system}{\underline{GitHub Repository}}}
+
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \footnotesize{\item{
+     \textbf{Java Programming} -- MindLuster \href{https://drive.google.com/file/d/1jRZ9k3YJxyi45Ui10vn2jrItZ-hOjLkD/view?usp=sharing}{(\underline{View})} \\
+     \textbf{SQL Skill Certification} -- One Roadmap \href{https://oneroadmap.io/skills/sql/certificate/CERT-F5AE24F3}{(\underline{View})} \\
+     \textbf{Python Skill Certification} -- One Roadmap \href{https://oneroadmap.io/skills/python/certificate/CERT-08E14D3B}{(\underline{View})} \\
+     \textbf{Python Skill Assessment} -- Scaler School of Technology \href{https://moonshot.scaler.com/s/li/5-7IQpVt6H}{(\underline{View})} \\
+     \textbf{Data Science vs ML vs AI} -- Scaler School of Technology \href{https://moonshot.scaler.com/s/sl/0L7AfXZP1e}{(\underline{View})}
+    }}
+ \end{itemize}
+
+%-----------AWARDS & ACHIEVEMENTS-----------
+\section{Awards \& Achievements}
+  \resumeSubHeadingListStart
+    \resumeItem{• Awarded \textbf{Best College Website Developer} by Aditya Degree College for excellence in website development (2025).}
+  \resumeSubHeadingListEnd
+
+\end{document}
