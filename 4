@@ -1,0 +1,199 @@
+\documentclass[a4paper,8.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[a4paper, top=0.3in, bottom=0.3in, left=0.4in, right=0.4in]{geometry}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,filecolor=black,urlcolor=black}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-13pt}\scshape\raggedright\normalsize
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item\scriptsize{{#1 \vspace{-1pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \small\textbf{#1} & \small #2 \\
+  \scriptsize #3 & \scriptsize #4 \\
+  \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  \scriptsize #1 & \scriptsize #2 \\
+  \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+
+\renewcommand\labelitemi{$\bullet$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.12in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=0pt,itemsep=0pt,parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Large \scshape Vishnu Vardhan} \\ \vspace{1pt}
+\small\textbf{Full Stack AI Engineer} \\ \vspace{1pt}
+\scriptsize
+\faPhone\ 9182177915 \quad
+\faEnvelope\ \href{mailto:repanavishnuvardhan67664@gmail.com}{repanavishnuvardhan67664@gmail.com} \quad
+\faLinkedin\ \href{https://www.linkedin.com/in/repana-vishnu-vardhan-26795b316/}{LinkedIn} \quad
+\faGithub\ \href{https://github.com/vishnu915}{GitHub} \quad
+\faGlobe\ \href{https://vishnuweb24.netlify.app/}{Portfolio} \quad
+\faMapMarker*\ Bengaluru, Karnataka, India
+\end{center}
+
+\vspace{-4pt}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\scriptsize{
+Full Stack AI Engineer with nearly \textbf{1 year of internship experience} building production-grade \textbf{LLM pipelines, RAG systems, and scalable REST APIs}. Proficient in \textbf{Python, FastAPI, LangChain, and React.js}. Strong foundation in \textbf{System Design, Application Security, Integration, and Deployment}, with exposure to \textbf{AI, Machine Learning, Deep Learning, and Automation}. Passionate about writing clean, secure, optimized, and production-ready code to solve real-world business challenges.
+}
+\vspace{-2pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+   {The Developers Arena}{Hyderabad, Telangana, India}
+  {Python Developer Intern}{Nov 2025 -- May 2026}
+  \resumeItemListStart
+    \resumeItem{Architected \textbf{6+ production-grade REST APIs} with \textbf{Flask and FastAPI} using \textbf{modular MVC design patterns}, enabling seamless third-party integrations and reducing average response latency by \textbf{30\%} across live client deployments.}
+    \resumeItem{Built \textbf{end-to-end AI backend pipelines} integrating \textbf{OpenAI/Gemini LLMs, LangChain agents, and RAG} with \textbf{Pinecone/ChromaDB vector stores} --- delivering intelligent \textbf{document Q\&A, semantic search, and automated reasoning} features shipped to production.}
+    \resumeItem{Engineered \textbf{optimized MySQL schemas} with normalized table design, composite indexing, and stored procedures --- cutting query execution time by \textbf{40\%} and sustaining reliable performance under high-volume concurrent read/write workloads.}
+    \resumeItem{Scaled \textbf{API throughput by 3$\times$} by integrating \textbf{Apache Kafka event streaming} for real-time data ingestion and implementing \textbf{Redis caching, Celery async task queues, and connection pooling} --- sustaining \textbf{sub-200ms p95 response times} under \textbf{500+ concurrent request} load tests.}
+    \resumeItem{Secured backend infrastructure against \textbf{OWASP Top 10} attack vectors by integrating \textbf{JWT/OAuth2 auth flows, RBAC, AES-256 encryption, and parameterized queries} --- achieving \textbf{zero critical CVEs} across all API-facing services and blockchain endpoints.}
+    \resumeItem{Automated \textbf{ML data preprocessing pipelines} using \textbf{Pandas and NumPy} across \textbf{50K+ record datasets} --- standardizing feature engineering workflows and reducing model training preparation time by \textbf{35\%}.}
+    \resumeItem{Refactored monolithic backend into \textbf{Dockerized microservices} with \textbf{Kafka-driven inter-service messaging, Web3.py blockchain audit trails, and RESTful contracts} --- reducing deployment downtime by \textbf{50\%} and enabling \textbf{zero-downtime rolling updates} across high-traffic components.}
+    \resumeItem{Sustained \textbf{95\%+ sprint velocity} across \textbf{8+ Agile/Scrum cycles} using \textbf{Git flow, GitHub PRs, and Jira} --- coordinating across backend, AI/ML, blockchain, QA, and DevOps squads.}
+    {\href{https://drive.google.com/file/d/1a3kJci5vF8crSeUrbq5oDgO89fSRuQH-/view?usp=drive_link}{\underline{\textbf{View Certificate}}}}
+  \resumeItemListEnd
+\resumeSubheading
+{Infotact Solutions}{Bengaluru, Karnataka, India}
+{Software Engineer Intern}{Sep 2025 -- Dec 2025}
+\resumeItemListStart
+    \resumeItem{Designed and delivered \textbf{2+ production-ready full-stack MERN applications} (\textbf{React.js, Node.js, Express.js, MongoDB}) featuring \textbf{responsive UI/UX} and \textbf{RESTful backend architecture} supporting real-world client workflows.}
+    \resumeItem{Engineered \textbf{secure, scalable REST APIs} with \textbf{JWT-based authentication, Role-Based Access Control (RBAC), and server-side input validation} --- ensuring \textbf{zero unauthorized access} across all frontend-backend communication channels.}
+    \resumeItem{Optimized \textbf{application performance by 35\%} through \textbf{MongoDB indexing strategies, query optimization, aggregation pipeline tuning, and React component refactoring} --- reducing page load time and improving user experience.}
+    \resumeItem{Implemented \textbf{CI/CD-ready development workflows} using \textbf{Git Flow branching, GitHub Pull Requests, and structured peer code reviews} --- enforcing \textbf{DRY principles, modular architecture, and SOLID design patterns} across the codebase.}
+    \resumeItem{Collaborated within an \textbf{Agile/Scrum team} across \textbf{planning, development, testing, and deployment phases} --- consistently delivering features on schedule with \textbf{high code quality and minimal defect rate}.}
+        {\href{https://drive.google.com/file/d/1PHuKZhlqX4MTh6z0QzVNFmCJrThKpr8m/view?usp=sharing}{\underline{\textbf{View Certificate}}}}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=*,label={},nosep]
+\item \scriptsize{\textbf{Programming Languages:} Python}
+\item \scriptsize{\textbf{Computer Science Fundamentals:} Object-Oriented Programming (OOP), System Design, Operating Systems}
+\item \scriptsize{\textbf{Frontend Development:} HTML, CSS, JavaScript, React.js, Responsive UI Design}
+\item \scriptsize{\textbf{Backend Development:} Flask, FAST API, REST APIs, API Integration, Authentication, Scalable Backend Services}
+\item \scriptsize{\textbf{Databases:} MySQL, SQL, NoSQL, Vector Databases}
+\item \scriptsize{\textbf{Artificial Intelligence / Machine Learning:} Scikit-learn, NLP, Computer Vision, LangChain, LLM Integration, Prompt Engineering, RAG}
+\item \scriptsize{\textbf{Deep Learning:} Neural Networks, CNN, RNN, Transformers, Model Training and Optimization using TensorFlow, PyTorch}
+\item \scriptsize{\textbf{Cloud \& DevOps:} Cloud Computing, Docker, Kubernetes, AWS, CI/CD Pipelines, Deployment Automation}
+\item \scriptsize{\textbf{Tools \& Platforms:} Git, GitHub, Postman, VS Code, Jira, n8n, Jupyter Notebook, Vercel, Netlify}
+\item \scriptsize{\textbf{Methodologies:} Agile, Scrum, Software Development Life Cycle (SDLC)}
+\item \scriptsize{\textbf{Soft Skills:} Problem Solving, Communication, Team Collaboration, Adaptability, Visibility, Operational Excellence}
+\item \scriptsize{\textbf{AI Tools:} ChatGPT, Claude AI, GitHub Copilot, Gemini AI, Cursor AI}
+\end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Online Fee Management System} $|$ \emph{HTML, CSS, JavaScript, Python, Flask, MySQL, AI (LangChain, LLMs, RAG)}}{}
+\resumeItemListStart
+\resumeItem{\textbf{Problem:} Manual fee collection at \textbf{Aditya Degree College} caused delays in \textbf{fee tracking, reporting, and student query handling}.}
+\resumeItem{\textbf{Requirement Analysis:} Worked with \textbf{administrators and faculty} to identify needs including \textbf{fee tracking, student records, receipt generation, and reporting}.}
+\resumeItem{\textbf{System Design:} Built a \textbf{Full-Stack AI-powered platform} using \textbf{Flask REST APIs, MySQL, and responsive web UI} to digitize and automate fee operations.}
+\resumeItem{Implemented \textbf{secure admin authentication}, \textbf{automated fee tracking}, and \textbf{digital receipt generation}.}
+\resumeItem{Integrated \textbf{LLMs + RAG} for \textbf{intelligent fee queries, summaries, and administrative assistance}.}
+\resumeItem{\textbf{Impact:} Reduced manual workload and improved \textbf{fee management efficiency} with real-time \textbf{analytics dashboard}.}
+{\faGithub\ \href{https://github.com/vishnu915/online-fee-management-system}{\underline{\textbf{GitHub Repo}}}}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{AI-Based Vehicle Speed Detection System} $|$ \emph{HTML, CSS, JavaScript, Python, Flask, OpenCV, Deep Learning, TensorFlow/PyTorch, MySQL}}{}
+\resumeItemListStart
+\resumeItem{\textbf{Problem:} Traditional traffic monitoring systems rely on \textbf{expensive hardware (e.g., radar guns, sensors)} and manual supervision, making them costly and less scalable.}
+\resumeItem{\textbf{}Built a \textbf{full-stack AI system} to estimate vehicle speed from video, eliminating specialized hardware.}
+\resumeItem{Implemented \textbf{real-time detection, tracking, and optical flow} for accurate speed estimation.}
+\resumeItem{Achieved \textbf{\textasciitilde95\% accuracy} with a low average error of \textbf{$\pm$7 km/h} across diverse traffic conditions.}
+\resumeItem{Developed \textbf{real-time speed visualization dashboard} for monitoring vehicle speeds dynamically.}
+\resumeItem{Built a \textbf{Flask-based backend} with secure \textbf{user authentication (login/register)} and REST APIs.}
+\resumeItem{Integrated \textbf{MySQL database} to store user data and vehicle speed records.}
+\resumeItem{Designed a \textbf{responsive frontend} with video upload and interactive UI using HTML, CSS, and JavaScript.}
+\resumeItem{Engineered the system for \textbf{scalability, anomaly detection, and vehicle re-identification}.}
+{\faGithub\ \href{https://github.com/vishnu915/Vehicle-Speed-Detection.git}{\underline{\textbf{GitHub Repo}}}}
+\resumeItemListEnd
+\resumeProjectHeading
+  {\textbf{AI Agent for Automated Workflows} $|$ \emph{Python, LangChain, LangGraph, Mistral AI, IBM WatsonX, Browser-Use, Gradio, MCP, REST APIs}}{}
+  \resumeItemListStart
+    \resumeItem{Architected an \textbf{end-to-end autonomous AI automation system} that accepts a \textbf{single natural language prompt} and independently executes complete multi-step workflows using \textbf{LangGraph agent orchestration, Mistral AI, and IBM WatsonX} with \textbf{task decomposition, tool calling, and dynamic decision-making} — requiring zero manual intervention.}
+    \resumeItem{Engineered \textbf{fully autonomous browser automation} via \textbf{Browser-Use} for real-world web navigation, scraping, form filling, and data extraction; integrated \textbf{MCP adapter} for extensible tool connectivity and \textbf{LangGraph state management} to reliably execute complex, multi-stage agentic pipelines end-to-end.}
+    \resumeItem{Developed an interactive \textbf{Gradio UI} for prompt input, real-time execution tracking, and workflow monitoring; hardened \textbf{LLM output reliability} using \textbf{JSON repair} and \textbf{MainContentExtractor} for robust parsing across diverse web content. \faGithub\ \href{https://github.com/vishnu915/AI-Agent}{\underline{\textbf{GitHub Repo}}}}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Aditya Degree College}{B. Kotha Kota}
+{Bachelor of Computer Applications (BCA); CGPA: 9.05/10}{ 2026}
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \footnotesize{\item{
+     \textbf{Java Programming} -- MindLuster \href{https://drive.google.com/file/d/1jRZ9k3YJxyi45Ui10vn2jrItZ-hOjLkD/view?usp=sharing}{(\underline{View})} \\
+     \textbf{SQL Skill Certification} -- One Roadmap \href{https://oneroadmap.io/skills/sql/certificate/CERT-F5AE24F3}{(\underline{View})} \\
+     \textbf{Python Skill Certification} -- One Roadmap \href{https://oneroadmap.io/skills/python/certificate/CERT-08E14D3B}{(\underline{View})} \\
+     \textbf{Data Science vs ML vs AI} -- Scaler School of Technology \href{https://moonshot.scaler.com/s/sl/0L7AfXZP1e}{(\underline{View})}
+    }}
+ \end{itemize}
+
+
+
+%-----------AWARDS-----------
+\section{Awards \& Achievements}
+\resumeSubHeadingListStart
+\resumeItem{• Awarded \textbf{Best College Website Developer} by Aditya Degree College for excellence in website development (2025).}
+\resumeSubHeadingListEnd
+
+\end{document}
