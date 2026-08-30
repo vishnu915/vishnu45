@@ -1,0 +1,175 @@
+\documentclass[a4paper,8.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[a4paper, top=0.3in, bottom=0.3in, left=0.4in, right=0.4in]{geometry}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,filecolor=black,urlcolor=black}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-13pt}\scshape\raggedright\normalsize
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item\scriptsize{{#1 \vspace{-1pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \small\textbf{#1} & \small #2 \\
+  \scriptsize #3 & \scriptsize #4 \\
+  \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  \scriptsize #1 & \scriptsize #2 \\
+  \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+
+\renewcommand\labelitemi{$\bullet$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.12in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=0pt,itemsep=0pt,parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Large \scshape Vishnu Vardhan} \\ \vspace{1pt}
+\small\textbf{Forward Deployed Engineer} \\ \vspace{1pt}
+\scriptsize
+\faPhone\ 9182177915 \quad
+\faEnvelope\ \href{mailto:repanavishnuvardhan67664@gmail.com}{repanavishnuvardhan67664@gmail.com} \quad
+\faLinkedin\ \href{https://www.linkedin.com/in/repana-vishnu-vardhan-26795b316/}{LinkedIn} \quad
+\faGithub\ \href{https://github.com/vishnu915}{GitHub} \quad
+\faGlobe\ \href{https://vishnu4518-dev.vercel.app/}{Portfolio} \quad
+\faMapMarker*\ India
+\end{center}
+
+\vspace{-4pt}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\scriptsize{
+Engineer who sits with the business problem, not just the ticket. Experience taking vague client asks --- slow pipelines, manual ops workflows, unreliable AI outputs --- diagnosing the real root cause, architecting the fix (agentic systems, RAG, backend infra), and shipping it into live environments with a measurable before/after result. Comfortable owning diagnosis through deployed outcome end-to-end.
+}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+   {The Developers Arena}{Bengaluru, Karnataka, India}
+  {Software Engineer Intern -- Client-Facing AI \& Backend Systems}{Nov 2025 -- May 2026}
+  \resumeItemListStart
+    \resumeItem{\textbf{Problem:} client integrations were bottlenecked by slow, inconsistent backend APIs across multiple live deployments. Diagnosed latency at the API layer and \textbf{architected 6+ production-grade REST APIs} with \textbf{Flask and FastAPI} using \textbf{modular MVC design}, cutting average response latency by \textbf{30\%} across client environments.}
+    \resumeItem{Partnered on client requirements for \textbf{document Q\&A, semantic search, and automated reasoning} and delivered the fix as \textbf{end-to-end AI backend pipelines} --- \textbf{OpenAI/Gemini LLMs, LangChain agents, and RAG} on \textbf{Pinecone/ChromaDB} --- shipped directly to production.}
+    \resumeItem{Root-caused slow query performance under load and \textbf{re-engineered MySQL schemas} with normalized design, composite indexing, and stored procedures --- cutting query execution time by \textbf{40\%} and holding up under high-volume concurrent workloads.}
+    \resumeItem{Diagnosed a throughput ceiling during a client scale-up and closed it by introducing \textbf{Apache Kafka event streaming, Redis caching, and Celery async task queues} --- \textbf{3$\times$ API throughput}, sustaining \textbf{sub-200ms p95} under \textbf{500+ concurrent requests}.}
+    \resumeItem{Owned security hardening end-to-end ahead of a client compliance review: \textbf{JWT/OAuth2, RBAC, AES-256 encryption, parameterized queries} --- delivered \textbf{zero critical CVEs} across all API-facing and blockchain endpoints.}
+    \resumeItem{Automated \textbf{ML data preprocessing} (\textbf{Pandas/NumPy}) across \textbf{50K+ records} to unblock a stalled model-training workflow --- cut prep time by \textbf{35\%}.}
+    \resumeItem{Diagnosed deployment downtime as an architectural issue, not a config one, and \textbf{re-architected the monolith into Dockerized microservices} with \textbf{Kafka messaging and Web3.py audit trails} --- \textbf{50\% less downtime}, enabling \textbf{zero-downtime rolling updates}.}
+    \resumeItem{Operated as the connective layer across backend, AI/ML, blockchain, QA, and DevOps squads --- sustained \textbf{95\%+ sprint velocity} across \textbf{8+ Agile cycles}.}
+   {\href{https://drive.google.com/file/d/1a3kJci5vF8crSeUrbq5oDgO89fSRuQH-/view?usp=drive_link}{\underline{\textbf{View Certificate}}}}
+  \resumeItemListEnd
+\resumeSubheading
+{Infotact Solutions}{Bengaluru, Karnataka, India}
+{Software Engineer Intern -- Agentic AI Systems}{Sep 2025 -- Dec 2025}
+\resumeItemListStart
+    \resumeItem{\textbf{Problem:} content research and drafting were manual, slow, single-threaded processes. \textbf{Architected a multi-agent research and content pipeline} in \textbf{Python (LangChain, LangGraph)} with modular agent roles for web research, summarization, and drafting inside a stateful workflow.}
+    \resumeItem{Built \textbf{autonomous multi-step reasoning} via \textbf{LangGraph state machines} with tool-calling, agent-to-agent delegation, and short/long-term memory --- letting agents plan, execute, and self-correct without hand-holding.}
+    \resumeItem{Exposed the workflow to real usage by integrating \textbf{OpenAI/Claude LLM APIs} with an \textbf{async FastAPI backend} for triggering, monitoring, and retrieving results in real time.}
+    \resumeItem{Diagnosed hallucination as the core reliability risk and closed the gap with a \textbf{RAG pipeline} on \textbf{Pinecone/ChromaDB} and custom embedding pipelines --- grounded outputs in source data, improving factual accuracy.}
+    \resumeItem{Found and fixed a latency bottleneck under multi-agent load using \textbf{Python asyncio orchestration, response caching, and parallelized agent calls} --- reduced end-to-end pipeline latency.}
+        {\href{https://drive.google.com/file/d/1PHuKZhlqX4MTh6z0QzVNFmCJrThKpr8m/view?usp=sharing}{\underline{\textbf{View Certificate}}}}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=*,label={},nosep]
+\item \scriptsize{\textbf{Core Engineering:} Python, SQL, Flask, FastAPI, MySQL, Vector Databases}
+\item \scriptsize{\textbf{Agentic AI Orchestration:} LangChain, LangGraph, MCP (Model Context Protocol), Multi-LLM Routing \& Fallback Strategies, Agentic Systems}
+\item \scriptsize{\textbf{AI / LLM:} LLM Integration (OpenAI, Gemini, Claude), RAG (retrieval, chunking, re-ranking, caching), Prompt Engineering, Vector Embeddings, Evaluation \& Observability}
+\item \scriptsize{\textbf{Machine Learning:} Scikit-learn, NLP, Computer Vision, Feature Engineering, Model Evaluation \& Optimization}
+\item \scriptsize{\textbf{Cloud \& Systems:} AWS, Docker, Kubernetes, CI/CD Pipelines, Kafka, Redis, Celery}
+\item \scriptsize{\textbf{Adjacent Skills:} Root-cause diagnosis, client-facing requirements gathering, production deployment ownership, cost/latency benchmarking, security \& compliance basics (PII redaction)}
+\item \scriptsize{\textbf{Tools \& Platforms:} Git, GitHub, Postman, VS Code, Jira, n8n, Jupyter Notebook, Vercel, Netlify}
+\end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+  {\textbf{N45 Agentic Builder} $|$ \emph{Internship Project -- Next.js, React, TypeScript, FastAPI, Python, MySQL, LLM, LangGraph,LangChain, RAG, Vector DB,AWS}}{}
+  \resumeItemListStart
+    \resumeItem{\textbf{Business problem:} enterprises lacked a unified visual platform to build, orchestrate, and monitor multi-agent AI workflows --- relying instead on fragmented scripts and manual integrations.}
+    \resumeItem{\textbf{Architecture:} contributed to a production-ready \textbf{Enterprise AI Agent Development Platform} featuring a drag-and-drop \textbf{Workflow Builder (React Flow)} and \textbf{multi-agent orchestration} for parent--sub-agent collaboration.}
+    \resumeItem{Worked on \textbf{workflow validation, versioning, autosave, deployment, and real-time execution monitoring} for reliable end-to-end workflow lifecycle management.}
+    \resumeItem{Helped integrate \textbf{multiple LLM providers} (\textbf{OpenAI, Gemini, Anthropic, Groq, Ollama, Azure OpenAI}) via configurable AI profiles, with \textbf{Knowledge Base (RAG)} support for document ingestion and semantic retrieval.}
+    \resumeItem{Supported implementation of \textbf{JWT authentication, RBAC, multi-tenant workspace architecture, and encrypted credential management} for enterprise-grade security.}
+    \resumeItem{Assisted in connecting enterprise tools (\textbf{Google Workspace, Slack, GitHub, Jira, Notion, REST/GraphQL APIs, webhooks}) with \textbf{analytics dashboards and audit logging} for full observability.}
+    \resumeItem{\textbf{Result:} platform enabled enterprises to build and scale AI agent workflows without custom infrastructure --- cutting integration overhead across LLM providers and tools.}
+  \resumeItemListEnd
+{\textbf{Agentic HR -- AI-Powered Recruitment Pipeline} $|$ \emph{Python, LangGraph, FastAPI, Groq LLM, Twilio, Google Calendar API, Gmail API, MongoDB}}{}
+\resumeItemListStart
+\resumeItem{\textbf{Business problem:} manual recruitment coordination across shortlisting, screening, scheduling, and onboarding was slow and error-prone for HR teams.}
+\resumeItem{\textbf{Root cause \& architecture:} no single system owned the full candidate lifecycle. Designed an \textbf{8-node multi-agent pipeline} on \textbf{LangGraph StateGraph}, automating end-to-end from resume screening to onboarding with \textbf{3 human-in-the-loop approval gates} for client trust.}
+\resumeItem{Shipped a \textbf{Resume Shortlister Agent} (\textbf{Groq LLM, Llama 3.3 70B}) parsing PDF/DOCX resumes and ranking the top \textbf{15 candidates} against job descriptions with match scores and rationale.}
+\resumeItem{Shipped a \textbf{Pre-Screening Call Agent} (\textbf{Twilio voice + Edge TTS}) running autonomous live phone screens, extracting \textbf{5 structured data points} per candidate (CTC, availability, job-change intent).}
+\resumeItem{Shipped an \textbf{Interview Scheduler Agent} (\textbf{Google Calendar + Gmail APIs}) that scans availability, books the first free 1-hour slot, and generates Meet links with zero manual coordination.}
+\resumeItem{Shipped an \textbf{Onboarding Agent} auto-sending personalized welcome emails, closing the loop on the full hire-to-onboard workflow.}
+\resumeItem{\textbf{Result \& next steps:} identified production upgrade path --- migrating voice to low-latency streaming to remove turn-based delay, and scoping a \textbf{Background Verification Agent} for post-onboarding checks.}
+{\faGithub\ \href{https://github.com/vishnu915/Multi-Agent-AI-HR-Recruitment-Workflow-Agent.git}{\underline{\textbf{GitHub Repo}}}}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Online Fee Management System} $|$ \emph{HTML, CSS, JavaScript, Python, Flask, MySQL, AI (LangChain, LLMs, RAG, Vector DB)}}{}
+\resumeItemListStart
+\resumeItem{\textbf{Business problem:} manual fee collection at \textbf{Aditya Degree College} caused delays in fee tracking, reporting, and student query handling.}
+\resumeItem{\textbf{Architecture:} designed and shipped a full-stack AI-powered platform (\textbf{Flask REST APIs, MySQL, responsive UI}) to digitize and automate fee operations end-to-end for a live institutional client.}
+\resumeItem{Delivered \textbf{secure admin authentication}, \textbf{automated fee tracking}, and \textbf{digital receipt generation}.}
+\resumeItem{Integrated \textbf{LLMs + RAG} for intelligent fee queries, summaries, and administrative assistance --- reducing turnaround on routine student queries.}
+\resumeItem{\textbf{Result:} cut manual workload and improved fee-management efficiency with a real-time analytics dashboard.}
+\resumeItem{\textbf{Next steps scoped:} multi-agent automation layer (\textbf{n8n}) to orchestrate fee reminders, receipt workflows, and admin task handling.}
+{\faGithub\ \href{https://github.com/vishnu915/online-fee-management-system}{\underline{\textbf{GitHub Repo}}}}
+\resumeItemListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Aditya Degree College}{B. Kotha Kota}
+{Bachelor of Computer Applications (BCA); CGPA: 9.02/10}{2026}
+\resumeSubHeadingListEnd
+
+
+
+\end{document}
