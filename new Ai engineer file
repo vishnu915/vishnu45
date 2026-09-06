@@ -93,7 +93,6 @@ AI Engineer who ships production LLM and agentic systems, not just notebooks ---
     \resumeItem{Built \textbf{end-to-end AI backend pipelines} integrating \textbf{OpenAI/Gemini LLMs, LangChain agents, and RAG} with \textbf{Pinecone/ChromaDB vector stores} --- delivering intelligent \textbf{document Q\&A, semantic search, and automated reasoning} features shipped to production.}
     \resumeItem{Engineered \textbf{optimized MySQL schemas} with normalized table design, composite indexing, and stored procedures --- cutting query execution time by \textbf{40\%} and sustaining reliable performance under high-volume concurrent read/write workloads.}
     \resumeItem{Scaled \textbf{API throughput by 3$\times$} by integrating \textbf{Apache Kafka event streaming} for real-time data ingestion and implementing \textbf{Redis caching, Celery async task queues, and connection pooling} --- sustaining \textbf{sub-200ms p95 response times} under \textbf{500+ concurrent request} load tests.}
-    \resumeItem{Secured backend infrastructure against \textbf{common web application attack vectors} by integrating \textbf{JWT/OAuth2 auth flows, RBAC, AES-256 encryption, and parameterized queries} --- achieving \textbf{zero critical CVEs} across all API-facing services and blockchain endpoints.}
     \resumeItem{Automated \textbf{ML data preprocessing pipelines} using \textbf{Pandas and NumPy} across \textbf{50K+ record datasets} --- standardizing feature engineering workflows and reducing model training preparation time by \textbf{35\%}.}
     \resumeItem{Refactored monolithic backend into \textbf{Dockerized microservices} with \textbf{Kafka-driven inter-service messaging, Web3.py blockchain audit trails, and RESTful contracts} --- reducing deployment downtime by \textbf{50\%} and enabling \textbf{zero-downtime rolling updates} across high-traffic components.}
     \resumeItem{Sustained \textbf{95\%+ sprint velocity} across \textbf{8+ Agile/Scrum cycles} using \textbf{Git flow, GitHub PRs, and Jira} --- coordinating across backend, AI/ML, blockchain, QA, and DevOps squads.}
@@ -153,7 +152,7 @@ AI Engineer who ships production LLM and agentic systems, not just notebooks ---
 {\faGlobe\ \href{https://onlinr.in}{\underline{\textbf{Live App}}}}
 \resumeItemListEnd
 
-{\textbf{Agentic HR -- AI-Powered Recruitment Pipeline} $|$ \emph{Python, LangGraph, FastAPI, Groq LLM, Twilio, Google Calendar API, Gmail API, MongoDB}}{}
+{\textbf{Agentic HR -- AI-Powered Recruitment Pipeline} $|$ \emph{Python, LangGraph, FastAPI, Groq LLM, Twilio, Google Calendar API, Gmail API}}{}
 \resumeItemListStart
 \resumeItem{\textbf{Business problem:} manual recruitment coordination across shortlisting, screening, scheduling, and onboarding was slow and error-prone for HR teams.}
 \resumeItem{\textbf{Root cause \& architecture:} no single system owned the full candidate lifecycle. Designed an \textbf{8-node multi-agent pipeline} on \textbf{LangGraph StateGraph}, automating end-to-end from resume screening to onboarding with \textbf{3 human-in-the-loop approval gates} for client trust.}
