@@ -71,16 +71,12 @@
 \faLinkedin\ \href{https://www.linkedin.com/in/repana-vishnu-vardhan-26795b316/}{LinkedIn} \quad
 \faGithub\ \href{https://github.com/vishnu915}{GitHub} \quad
 \faGlobe\ \href{https://vishnu4518-dev.vercel.app/}{Portfolio} \quad
-\faMapMarker*\ India
+\faMapMarker*\   Trivandrum, India
 \end{center}
 
 \vspace{-4pt}
 
 %-----------SUMMARY-----------
-\section{Summary}
-\scriptsize{
-Engineer who sits with the business problem, not just the ticket. Experience taking vague client asks --- slow pipelines, manual ops workflows, unreliable AI outputs --- diagnosing the real root cause, architecting the fix (agentic systems, RAG, backend infra), and shipping it into live environments with a measurable before/after result. Comfortable owning diagnosis through deployed outcome end-to-end.
-}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -94,7 +90,7 @@ Engineer who sits with the business problem, not just the ticket. Experience tak
     \resumeItem{Root-caused slow query performance under load and \textbf{re-engineered MySQL schemas} with normalized design, composite indexing, and stored procedures --- cutting query execution time by \textbf{40\%} and holding up under high-volume concurrent workloads.}
     \resumeItem{Diagnosed a throughput ceiling during a client scale-up and closed it by introducing \textbf{Apache Kafka event streaming, Redis caching, and Celery async task queues} --- \textbf{3$\times$ API throughput}, sustaining \textbf{sub-200ms p95} under \textbf{500+ concurrent requests}.}
     \resumeItem{Owned security hardening end-to-end ahead of a client compliance review: \textbf{JWT/OAuth2, RBAC, AES-256 encryption, parameterized queries} --- delivered \textbf{zero critical CVEs} across all API-facing and blockchain endpoints.}
-    \resumeItem{Automated \textbf{ML data preprocessing} (\textbf{Pandas/NumPy}) across \textbf{50K+ records} to unblock a stalled model-training workflow --- cut prep time by \textbf{35\%}.}
+    
     \resumeItem{Diagnosed deployment downtime as an architectural issue, not a config one, and \textbf{re-architected the monolith into Dockerized microservices} with \textbf{Kafka messaging and Web3.py audit trails} --- \textbf{50\% less downtime}, enabling \textbf{zero-downtime rolling updates}.}
     \resumeItem{Operated as the connective layer across backend, AI/ML, blockchain, QA, and DevOps squads --- sustained \textbf{95\%+ sprint velocity} across \textbf{8+ Agile cycles}.}
    {\href{https://drive.google.com/file/d/1a3kJci5vF8crSeUrbq5oDgO89fSRuQH-/view?usp=drive_link}{\underline{\textbf{View Certificate}}}}
@@ -115,12 +111,14 @@ Engineer who sits with the business problem, not just the ticket. Experience tak
 %-----------SKILLS-----------
 \section{Skills}
 \begin{itemize}[leftmargin=*,label={},nosep]
-\item \scriptsize{\textbf{Core Engineering:} Python, SQL, Flask, FastAPI, MySQL, Vector Databases}
-\item \scriptsize{\textbf{Agentic AI Orchestration:} LangChain, LangGraph, MCP (Model Context Protocol), Multi-LLM Routing \& Fallback Strategies, Agentic Systems}
-\item \scriptsize{\textbf{AI / LLM:} LLM Integration (OpenAI, Gemini, Claude), RAG (retrieval, chunking, re-ranking, caching), Prompt Engineering, Vector Embeddings, Evaluation \& Observability}
-\item \scriptsize{\textbf{Machine Learning:} Scikit-learn, NLP, Computer Vision, Feature Engineering, Model Evaluation \& Optimization}
-\item \scriptsize{\textbf{Cloud \& Systems:} AWS, Docker, Kubernetes, CI/CD Pipelines, Kafka, Redis, Celery}
-\item \scriptsize{\textbf{Adjacent Skills:} Root-cause diagnosis, client-facing requirements gathering, production deployment ownership, cost/latency benchmarking, security \& compliance basics (PII redaction)}
+\item \scriptsize{\textbf{Programming Languages:} Python,}
+\item \scriptsize{\textbf{Backend \& APIs:} Flask, FastAPI, REST API Design}
+\item \scriptsize{\textbf{Databases:} MySQL, PostgreSQL (pgvector), MongoDB, Vector Databases (Pinecone, ChromaDB)}
+\item \scriptsize{\textbf{Agentic AI Orchestration:} LangChain, LangGraph, MCP (Model Context Protocol), Multi-Agent Systems, Multi-LLM Routing \& Fallback Strategies}
+\item \scriptsize{\textbf{AI / LLM:} LLM Integration (OpenAI GPT-4, Gemini, Claude, Groq), RAG (retrieval, chunking, re-ranking, hybrid search, caching), Prompt Engineering, Vector Embeddings, Hallucination Prevention, Evaluation \& Observability}
+\item \scriptsize{\textbf{Enterprise AI Platforms :} AWS Bedrock, Azure OpenAI, Google Vertex AI concepts}
+\item \scriptsize{\textbf{Cloud \& DevOps:} AWS, Docker, Kubernetes, CI/CD Pipelines, Kafka, Redis, Celery}
+\item \scriptsize{\textbf{Adjacent Skills:} Root-cause diagnosis, client-facing requirements gathering, production deployment ownership, cost/latency benchmarking}
 \item \scriptsize{\textbf{Tools \& Platforms:} Git, GitHub, Postman, VS Code, Jira, n8n, Jupyter Notebook, Vercel, Netlify}
 \end{itemize}
 
@@ -128,7 +126,18 @@ Engineer who sits with the business problem, not just the ticket. Experience tak
 \section{Projects}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-  {\textbf{N45 Agentic Builder} $|$ \emph{Internship Project -- Next.js, React, TypeScript, FastAPI, Python, MySQL, LLM, LangGraph,LangChain, RAG, Vector DB,AWS}}{}
+  {\textbf{Zero-Hallucination RAG Intelligence Platform} $|$ \emph{React (Vite), Python, FastAPI, PostgreSQL (pgvector), OpenAI GPT-4, RAG, LLM}}{}
+  \resumeItemListStart
+    \resumeItem{\textbf{Business problem:} standard LLM tools hallucinate on document-specific queries, producing confident but unverifiable answers with no traceability to source evidence.}
+    \resumeItem{\textbf{Architecture:} architected and shipped a full-stack \textbf{Retrieval-Augmented Generation} platform integrating the \textbf{OpenAI GPT-4 API} with \textbf{hybrid dense + lexical search} over \textbf{PostgreSQL (pgvector)}, using \textbf{TanStack Start + React} for a server-rendered, production-grade frontend.}
+    \resumeItem{Engineered a \textbf{6-layer hallucination-prevention system} --- retrieval-confidence thresholds, clause-affinity re-ranking, evidence-overlap validation, prompt-contract enforcement, and post-generation \textbf{claim verification} --- so the model \textbf{abstains rather than fabricates} when evidence is weak, missing, or conflicting.}
+    \resumeItem{Built \textbf{multi-format ingestion} (PDF, DOCX, XLSX, CSV, TXT, Markdown, JSON, HTML) processing \textbf{421 indexed chunks across 3 live documents}, with automated chunking, embedding, and vector indexing delivering \textbf{traceable inline citations} on every generated claim.}
+    \resumeItem{\textbf{Result:} benchmarked \textbf{0.0\% hallucination rate} and \textbf{1.000 groundedness} across \textbf{40 evaluation queries} (24 answered, 16 correctly abstained) --- with \textbf{1.000 recall@K}, \textbf{0.797 precision@K}, \textbf{1.000 MRR}, and \textbf{0.681 faithfulness}, at \textbf{~2.3s average end-to-end latency}.}
+    \resumeItem{\textbf{Next steps scoped:} deeper \textbf{database and third-party API integrations} to expand structured data grounding --- pushing faithfulness and precision higher while extending \textbf{zero-hallucination} answers to live relational data.}
+    {\faGlobe\ \href{https://onlinr.in}{\underline{\textbf{Live App}}}}
+  \resumeItemListEnd
+  \resumeProjectHeading
+  {\textbf{N45 Agentic Builder} $|$ \emph{Internship Project --- Next.js, React, TypeScript, FastAPI, Python, MySQL, LLM, LangGraph, LangChain, RAG, Vector DB, AWS}}{}
   \resumeItemListStart
     \resumeItem{\textbf{Business problem:} enterprises lacked a unified visual platform to build, orchestrate, and monitor multi-agent AI workflows --- relying instead on fragmented scripts and manual integrations.}
     \resumeItem{\textbf{Architecture:} contributed to a production-ready \textbf{Enterprise AI Agent Development Platform} featuring a drag-and-drop \textbf{Workflow Builder (React Flow)} and \textbf{multi-agent orchestration} for parent--sub-agent collaboration.}
@@ -137,7 +146,10 @@ Engineer who sits with the business problem, not just the ticket. Experience tak
     \resumeItem{Supported implementation of \textbf{JWT authentication, RBAC, multi-tenant workspace architecture, and encrypted credential management} for enterprise-grade security.}
     \resumeItem{Assisted in connecting enterprise tools (\textbf{Google Workspace, Slack, GitHub, Jira, Notion, REST/GraphQL APIs, webhooks}) with \textbf{analytics dashboards and audit logging} for full observability.}
     \resumeItem{\textbf{Result:} platform enabled enterprises to build and scale AI agent workflows without custom infrastructure --- cutting integration overhead across LLM providers and tools.}
+    {\faGlobe\ \href{https://internship.onlinr.in}{\underline{\textbf{Live App}}}}
   \resumeItemListEnd
+\resumeSubHeadingListEnd
+\resumeProjectHeading
 {\textbf{Agentic HR -- AI-Powered Recruitment Pipeline} $|$ \emph{Python, LangGraph, FastAPI, Groq LLM, Twilio, Google Calendar API, Gmail API, MongoDB}}{}
 \resumeItemListStart
 \resumeItem{\textbf{Business problem:} manual recruitment coordination across shortlisting, screening, scheduling, and onboarding was slow and error-prone for HR teams.}
@@ -145,22 +157,11 @@ Engineer who sits with the business problem, not just the ticket. Experience tak
 \resumeItem{Shipped a \textbf{Resume Shortlister Agent} (\textbf{Groq LLM, Llama 3.3 70B}) parsing PDF/DOCX resumes and ranking the top \textbf{15 candidates} against job descriptions with match scores and rationale.}
 \resumeItem{Shipped a \textbf{Pre-Screening Call Agent} (\textbf{Twilio voice + Edge TTS}) running autonomous live phone screens, extracting \textbf{5 structured data points} per candidate (CTC, availability, job-change intent).}
 \resumeItem{Shipped an \textbf{Interview Scheduler Agent} (\textbf{Google Calendar + Gmail APIs}) that scans availability, books the first free 1-hour slot, and generates Meet links with zero manual coordination.}
-\resumeItem{Shipped an \textbf{Onboarding Agent} auto-sending personalized welcome emails, closing the loop on the full hire-to-onboard workflow.}
+\resumeItem{Shipped an \textbf{Onboarding Agent} that auto-sends personalized welcome emails, closing the loop on the full hire-to-onboard workflow.}
 \resumeItem{\textbf{Result \& next steps:} identified production upgrade path --- migrating voice to low-latency streaming to remove turn-based delay, and scoping a \textbf{Background Verification Agent} for post-onboarding checks.}
 {\faGithub\ \href{https://github.com/vishnu915/Multi-Agent-AI-HR-Recruitment-Workflow-Agent.git}{\underline{\textbf{GitHub Repo}}}}
 \resumeItemListEnd
 
-\resumeProjectHeading
-{\textbf{Online Fee Management System} $|$ \emph{HTML, CSS, JavaScript, Python, Flask, MySQL, AI (LangChain, LLMs, RAG, Vector DB)}}{}
-\resumeItemListStart
-\resumeItem{\textbf{Business problem:} manual fee collection at \textbf{Aditya Degree College} caused delays in fee tracking, reporting, and student query handling.}
-\resumeItem{\textbf{Architecture:} designed and shipped a full-stack AI-powered platform (\textbf{Flask REST APIs, MySQL, responsive UI}) to digitize and automate fee operations end-to-end for a live institutional client.}
-\resumeItem{Delivered \textbf{secure admin authentication}, \textbf{automated fee tracking}, and \textbf{digital receipt generation}.}
-\resumeItem{Integrated \textbf{LLMs + RAG} for intelligent fee queries, summaries, and administrative assistance --- reducing turnaround on routine student queries.}
-\resumeItem{\textbf{Result:} cut manual workload and improved fee-management efficiency with a real-time analytics dashboard.}
-\resumeItem{\textbf{Next steps scoped:} multi-agent automation layer (\textbf{n8n}) to orchestrate fee reminders, receipt workflows, and admin task handling.}
-{\faGithub\ \href{https://github.com/vishnu915/online-fee-management-system}{\underline{\textbf{GitHub Repo}}}}
-\resumeItemListEnd
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -169,7 +170,5 @@ Engineer who sits with the business problem, not just the ticket. Experience tak
 {Aditya Degree College}{B. Kotha Kota}
 {Bachelor of Computer Applications (BCA); CGPA: 9.02/10}{2026}
 \resumeSubHeadingListEnd
-
-
 
 \end{document}
