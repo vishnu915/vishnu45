@@ -1,0 +1,188 @@
+\documentclass[a4paper,8.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[a4paper, top=0.3in, bottom=0.3in, left=0.4in, right=0.4in]{geometry}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,filecolor=black,urlcolor=black}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-13pt}\scshape\raggedright\normalsize
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item\scriptsize{{#1 \vspace{-1pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \small\textbf{#1} & \small #2 \\
+  \scriptsize #3 & \scriptsize #4 \\
+  \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  \scriptsize #1 & \scriptsize #2 \\
+  \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+
+\renewcommand\labelitemi{$\bullet$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.12in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=0pt,itemsep=0pt,parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Large \scshape Vishnu Vardhan} \\ \vspace{1pt}
+\small\textbf{Forward Deployed AI Engineer} \\ \vspace{1pt}
+\scriptsize
+\faPhone\ 9182177915 \quad
+\faEnvelope\ \href{mailto:repanavishnuvardhan67664@gmail.com}{repanavishnuvardhan67664@gmail.com} \quad
+\faLinkedin\ \href{https://www.linkedin.com/in/repana-vishnu-vardhan-26795b316/}{LinkedIn} \quad
+\faGithub\ \href{https://github.com/vishnu915}{GitHub} \quad
+\faGlobe\ \href{https://vishnu4518-dev.vercel.app/}{Portfolio} \quad
+\faMapMarker*\  Bengaluru, Karnataka, India
+\end{center}
+
+\vspace{-4pt}
+
+%-----------SUMMARY-----------
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{Forward Deployed AI Engineer who sits with the business problem, not just the ticket. Experience diagnosing the root cause behind vague client asks --- slow pipelines, manual ops workflows, unreliable AI outputs --- then architecting and shipping the fix (\textbf{Agentic AI, RAG, vector databases, backend infrastructure}) into live production with a measurable before/after result. Hands-on across \textbf{Python, REST APIs, SQL, Docker, AWS, RAG, and prompt engineering}, with proven \textbf{zero-hallucination RAG} and \textbf{multi-agent} systems shipped to production. Comfortable owning diagnosis through deployed outcome, end-to-end.}
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+   {The Developers Arena}{Bengaluru, Karnataka, India}
+  {Software Engineer Intern -- Client-Facing AI \& Backend Systems}{Nov 2025 -- May 2026}
+\resumeItemListStart
+    \resumeItem{Partner directly with \textbf{ enterprise clients} through \textbf{customer-facing engineering, technical consulting, requirements gathering, and business requirements analysis}, translating vague asks into \textbf{custom production solutions} with clear success metrics.}
+    \resumeItem{Design and deploy \textbf{full-stack applications} with \textbf{React}, owning \textbf{solution architecture} from UI to database and cutting client time-to-launch by \textbf{35\%}.}
+    \resumeItem{Build \textbf{15+ REST/GraphQL APIs} with \textbf{FastAPI and Express}, implementing \textbf{OAuth2, JWT, RBAC, webhooks, and payments integration}, sustaining \textbf{sub-250ms p95} latency through \textbf{asynchronous programming and caching}.}
+    \resumeItem{Develop \textbf{advanced RAG} pipelines with \textbf{LangChain, pgvector, ChromaDB, and FAISS}, applying \textbf{hybrid search, re-ranking, chunking strategies, and vector embeddings} to lift answer accuracy by \textbf{28\%} and enforce \textbf{hallucination prevention}.}
+    \resumeItem{Engineer \textbf{agentic workflows and multi-agent systems} with \textbf{LangGraph and MCP (Model Context Protocol)}, using \textbf{tool calling, agent-to-agent delegation, and human-in-the-loop approval workflows} to automate document review and save clients \textbf{120+ hours per month}.}
+    \resumeItem{Integrate \textbf{OpenAI, Anthropic, and Gemini APIs} with \textbf{prompt engineering, LLM evaluation, guardrails, and multi-LLM routing \& fallback}, reaching a \textbf{95\% evaluation pass rate} and \textbf{AI observability} across \textbf{3 production deployments}.}
+    \resumeItem{Architect \textbf{ETL pipelines} with \textbf{Apache Airflow, dbt, Pandas, and Kafka streaming} to clean and unify siloed CSV, JSON, and Excel data, processing \textbf{500K+ records daily} into \textbf{vector databases (Pinecone, Weaviate)}.}
+    \resumeItem{Optimize \textbf{advanced SQL on PostgreSQL} with \textbf{window functions, CTEs, query optimization, and indexing}, cutting report generation time by \textbf{60\%} through \textbf{database schema design and normalization}.}
+    \resumeItem{Deploy workloads in client-owned \textbf{AWS} accounts (\textbf{EC2, S3, RDS, IAM, VPC, Lambda, Bedrock}) with \textbf{Terraform (Infrastructure as Code)}, meeting client \textbf{security and compliance} requirements and cutting environment setup from days to hours.}
+    \resumeItem{Containerize services with \textbf{Docker, Kubernetes, and Helm}, and automate \textbf{CI/CD pipelines with GitHub Actions}, enabling \textbf{zero-downtime production deployment} and a \textbf{45\% faster release cycle}.}
+    \resumeItem{Implement \textbf{monitoring, logging, and observability} with \textbf{Prometheus and Grafana}, sustaining \textbf{99.5\% uptime} and cutting incident resolution time by \textbf{40\%} through \textbf{technical troubleshooting and root cause analysis}.}
+   {\href{https://drive.google.com/file/d/1a3kJci5vF8crSeUrbq5oDgO89fSRuQH-/view?usp=drive_link}{\underline{\textbf{View Certificate}}}}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\section{Skills}
+\begin{itemize}[leftmargin=*,label={},nosep]
+
+\item \scriptsize{\textbf{FDE \& Solution Delivery:} Customer-Facing Engineering, Technical Consulting, Requirements Gathering, Business Requirements Analysis, Solution Architecture, System Integration, Production Deployment, Technical Troubleshooting, Root Cause Analysis (RCA), Performance Optimization, Stakeholder Management, Cross-Functional Collaboration, Technical Documentation, Client Onboarding}
+
+\item \scriptsize{\textbf{AI / LLM Engineering:} Generative AI, LLM Integration (GPT-4, Gemini, Claude, Groq), OpenAI \& Anthropic APIs, RAG , Prompt Engineering, Vector Embeddings, Semantic Search, Hybrid Search, Re-ranking, Chunking Strategies, Hallucination Prevention, LLM Evaluation, AI Observability}
+
+\item \scriptsize{\textbf{Agentic AI:} LangChain, LangGraph, MCP (Model Context Protocol), Multi-Agent Systems, Agentic Workflows, Tool Calling, Agent-to-Agent Delegation, Autonomous Reasoning, Short/Long-Term Memory, Multi-LLM Routing \& Fallback, Human-in-the-Loop, Approval Workflows}
+
+\item \scriptsize{\textbf{Full Stack Development:} Python,JavaScript, React, HTML, CSS, Flask, FastAPI, REST API Design}
+
+\item \scriptsize{\textbf{Data Engineering \& Databases:}  SQL, MySQL, Schema Design, Normalization, Pandas, ETL Pipelines, Data Cleaning, Apache Airflow, dbt, Apache Kafka, Pinecone, ChromaDB, FAISS, Weaviate, Vector Databases}
+
+\item \scriptsize{\textbf{Cloud, DevOps \& Infrastructure:} AWS (EC2, S3, RDS, IAM, VPC, Lambda, Bedrock), Docker, Docker Compose, Kubernetes, Helm, Terraform, CI/CD Pipelines, GitHub Actions, Linux, Redis, Celery, Prometheus, Grafana, Monitoring, Logging, Observability, Vercel, Railway}
+
+\item \scriptsize{\textbf{Systems Design \& Security:} Scalable System Design, API Architecture, Distributed Systems, Load Balancing, Caching, Microservices vs Monolith, Event-Driven Architecture, OAuth2, JWT, RBAC, OWASP Top 10, IAM, Secrets Management, Encryption, Audit Logging, Idempotency}
+
+\item \scriptsize{\textbf{Enterprise Integration:} Third-Party API Integration, Google Workspace, Slack, GitHub, Jira, Notion, Gmail API, Google Calendar API, Payment Gateway APIs, Order/Return/Payment System Integration}
+
+\item \scriptsize{\textbf{Debugging \& Testing:} AI Debugging, Log Analysis, Stack Trace Analysis, Incident Response, Distributed Tracing, Automated Testing, Pytest, Regression Testing, Code Generation, Pull Request Workflows}
+
+\item \scriptsize{\textbf{Tools \& Platforms:} Git, Postman, VS Code, n8n, Jupyter Notebook, Netlify}
+
+\end{itemize}
+
+%-----------PROJECTS-----------
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+  {\textbf{LLM Cost Optimization Gateway} $|$ \emph{Python, FastAPI, LangChain, LangGraph, Redis, PostgreSQL (pgvector), RAG, React.js, Docker, Prometheus, AWS CloudWatch, OpenAI/Claude API}}{}
+  \resumeItemListStart
+    \resumeItem{\textbf{Real Client Problem:} addressed enterprise LLM cost inefficiencies from premium-model overuse, repeated queries, oversized prompts, and irrelevant RAG context by building a cost-optimization gateway with a 40\% cost-reduction target against a baseline workload.}
+
+    \resumeItem{\textbf{Backend architecture:} architected an asynchronous \textbf{FastAPI} LLM gateway connecting client applications to multiple providers, implementing authentication, session management, response streaming, and \textbf{LangGraph} orchestration, with a p95 latency target under 2 seconds.}
+
+    \resumeItem{\textbf{Intelligent model routing:} engineered complexity-based routing across GPT, Claude, Llama, and Mistral using cost, latency, and quality constraints, targeting 65\% of eligible requests on cost-efficient models while preserving answer quality.}
+
+    \resumeItem{\textbf{Multi-provider integration:} integrated \textbf{OpenAI}, \textbf{Anthropic Claude}, \textbf{Llama}, and \textbf{Mistral} through a unified provider interface with timeout handling, bounded retries, and automatic fallback; validated provider-failure scenarios with automated tests.}
+
+    \resumeItem{\textbf{Semantic caching:} implemented \textbf{Redis} semantic caching with embedding-similarity thresholds, TTL expiration, and cache invalidation to eliminate redundant LLM calls, targeting a 30\% cache-hit rate and under 1\% false-hit rate.}
+
+    \resumeItem{\textbf{Optimized RAG:} engineered a \textbf{RAG} pipeline with document chunking, embeddings, \textbf{PostgreSQL pgvector} similarity search, metadata filtering, top-K retrieval, reranking, and citations, targeting 0.88 Recall@5 on a labeled retrieval evaluation set.}
+
+    \resumeItem{\textbf{Prompt optimization:} developed query rewriting, context compression, structured prompts, and output schemas to remove irrelevant context, targeting a 30\% reduction in average input tokens while maintaining answer quality.}
+
+    \resumeItem{\textbf{Monitoring \& evaluation:} instrumented \textbf{Prometheus} and \textbf{AWS CloudWatch} observability for token usage, cost per request, p95 latency, cache-hit rate, and model usage; built a \textbf{React.js} cost dashboard and automated LLM evaluation harness.}
+  \resumeItemListEnd
+
+
+
+\resumeProjectHeading
+  {\textbf{N45 Agentic Builder} $|$ \emph{React, Javascript, FastAPI, Python, MySQL, LangGraph, LangChain, RAG, Vector Database, AWS}}{}
+  \resumeItemListStart
+    \resumeItem{\textbf{Real World Problem:} contributed to a production \textbf{Enterprise AI Agent Development Platform} (live at internship.onlinr.in) that replaced fragmented scripts and manual integrations with one visual workspace to build, orchestrate, and monitor \textbf{multi-agent workflows}.}
+    \resumeItem{\textbf{Workflow builder:} developed a drag-and-drop \textbf{React Flow} editor with \textbf{4 core capabilities}: workflow validation, versioning, autosave, and one-click deployment, reducing workflow setup effort compared with script-based setup.}
+    \resumeItem{\textbf{Multi-agent orchestration:} implemented a \textbf{2-tier parent and sub-agent} hierarchy using \textbf{LangGraph} and \textbf{LangChain}, enabling multi-step workflows with tool calling, shared state, and task delegation.}
+    \resumeItem{\textbf{Real-time monitoring:} built live execution monitoring for agent runs, giving users step-by-step visibility into workflow status, outputs, and failures for faster debugging and observability.}
+    \resumeItem{\textbf{Multi-LLM integration:} integrated \textbf{6 LLM providers} (OpenAI, Gemini, Anthropic, Groq, Ollama, Azure OpenAI) through configurable AI profiles, letting teams switch models without code changes.}
+    \resumeItem{\textbf{Knowledge Base (RAG):} implemented document ingestion, embeddings, and semantic retrieval on a \textbf{vector database}, grounding agent responses in enterprise documents.}
+    \resumeItem{\textbf{Security:} implemented \textbf{3 security layers}: JWT authentication, RBAC, and encrypted credential management, to secure workspace access and third-party tool connections.}
+    \resumeItem{\textbf{Multi-tenancy:} helped implement a \textbf{multi-tenant workspace architecture} that isolates each organization's agents, workflows, and data.}
+    \resumeItem{\textbf{Enterprise integrations:} connected \textbf{7 integration types} across \textbf{6+ tools} (Google Workspace, Slack, GitHub, Jira, Notion, REST/GraphQL APIs, webhooks), reducing integration overhead between LLM providers and business systems.}
+    \resumeItem{\textbf{Analytics \& audit logging:} contributed analytics dashboards and \textbf{audit logging} for usage tracking and compliance, with the platform deployed on \textbf{AWS}.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+\section{Awards \& Achievements}
+  \resumeSubHeadingListStart
+    \resumeItem{• Awarded \textbf{Best College Website Developer} by \textbf{Aditya Degree College} for excellence in website development .}
+    \resumeItem{• Collaborated with students from \textbf{NIT and IIT} to build and validate \textbf{business ideas} through cross-institution teamwork.}
+    \resumeItem{• Grew a social media audience to \textbf{20K+ followers}, building strong skills in content strategy, audience engagement, and digital outreach.}
+  \resumeSubHeadingListEnd
+  
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Aditya Degree College}{B. Kotha Kota}
+{Bachelor of Computer Applications (BCA); CGPA: 9.02/10}{2026}
+\resumeSubHeadingListEnd
+
+\end{document}
